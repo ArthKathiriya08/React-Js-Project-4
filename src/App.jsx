@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 
@@ -33,22 +32,11 @@ function App() {
   return (
     <div className="container py-4">
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Navigate
-              to={isLoggedIn ? "/blogs" : "/login"}
-              replace
-            />
-          }
-        />
+        <Route path="/" element={<Navigate to="/register" replace />} />
 
         <Route path="/register" element={<Register />} />
 
-        <Route
-          path="/login"
-          element={<Login onLogin={handleLogin} />}
-        />
+        <Route path="/login" element={<Login onLogin={handleLogin} />} />
 
         <Route
           path="/blogs"
