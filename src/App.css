@@ -1,0 +1,418 @@
+body {
+  margin: 0;
+  background: #dfe3ef;
+}
+
+/* ===== Login / Register / Add / Edit pages ===== */
+
+.auth-page {
+  min-height: 100vh;
+}
+
+/* Glass card wrapper */
+.auth-container {
+  width: 100%;
+  max-width: 1350px;
+  min-height: 650px;
+  margin: auto;
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.48);
+  box-shadow: 0 20px 55px rgba(48, 53, 90, 0.12);
+  overflow: hidden;
+}
+
+/* Left side image (login/register) */
+.auth-image {
+  width: 100%;
+  min-height: 620px;
+  height: 100%;
+  border-radius: 23px;
+  background-image: url("/img-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Form inputs */
+.auth-input {
+  width: 100%;
+  min-height: 58px;
+  padding: 14px 20px;
+  border: 1px solid transparent;
+  border-radius: 13px;
+  font-size: 16px;
+}
+
+.auth-input:focus {
+  border-color: #bd79f1;
+  box-shadow: 0 0 0 3px rgba(189, 121, 241, 0.15);
+}
+
+/* Main submit button */
+.auth-button {
+  min-height: 58px;
+  padding: 14px;
+  border: none;
+  border-radius: 13px;
+  background: #ff686b;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.auth-button:hover {
+  background: #f45158;
+  color: #fff;
+}
+
+/* ===== Add / Edit blog image preview ===== */
+
+.blog-auth-image {
+  width: 100%;
+  height: 100%;
+  min-height: 620px;
+  border-radius: 23px;
+  background-color: #e5e3f5;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-form-preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 620px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Text shown when no image URL is entered */
+.blog-image-placeholder {
+  padding: 25px;
+  text-align: center;
+  color: #625b82;
+}
+
+.blog-image-placeholder h3 {
+  font-weight: 700;
+}
+
+.blog-image-placeholder p {
+  margin-bottom: 0;
+}
+
+/* ===== Main header ===== */
+
+.main-header {
+  padding: 18px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 5px 20px rgba(45, 50, 80, 0.06);
+}
+
+.brand-link {
+  color: #1670f8;
+}
+
+.brand-link:hover {
+  color: #0757ce;
+}
+
+.brand-title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+}
+
+/* Common header button */
+.header-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.header-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Outline (All Blogs / Login) */
+.header-outline {
+  color: #1670f8;
+  border-color: #7da9ff;
+  background: transparent;
+}
+
+.header-outline:hover {
+  background: #eaf1ff;
+  color: #0757ce;
+}
+
+/* Green (Add Blog / Register) */
+.header-add {
+  color: #fff;
+  background: #198754;
+}
+
+.header-add:hover {
+  background: #146c43;
+  color: #fff;
+}
+
+/* Red (Logout) */
+.header-logout {
+  color: #fff;
+  background: #dc3545;
+}
+
+.header-logout:hover {
+  background: #bb2d3b;
+}
+
+/* ===== Search + sort toolbar ===== */
+
+.blog-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e8edf5;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(30, 50, 80, 0.06);
+}
+
+/* Search box takes the remaining width */
+.search-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+/* Font Awesome icon inside the search box */
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8b95a7;
+  pointer-events: none;
+}
+
+/* Shared look for search input + sort dropdown */
+.search-input,
+.sort-select {
+  height: 48px;
+  border: 1px solid #dfe5ef;
+  border-radius: 12px;
+  background-color: #fdfdff;
+  box-shadow: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Space on the left for the icon */
+.search-input {
+  padding-left: 44px;
+}
+
+.sort-wrapper {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.sort-select {
+  cursor: pointer;
+}
+
+/* Soft blue glow on focus */
+.search-input:focus,
+.sort-select:focus {
+  border-color: #91b8ff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+  outline: none;
+}
+
+/* ===== Blog cards ===== */
+
+.blog-card {
+  height: 100%;
+  overflow: hidden;
+  border: none;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(45, 50, 80, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(45, 50, 80, 0.12);
+}
+
+.blog-card-image {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  background: #e9eaf4;
+}
+
+.blog-card .card-body {
+  padding: 16px;
+}
+
+/* Long words should not break the card */
+.blog-card .card-title {
+  overflow-wrap: anywhere;
+}
+
+.blog-card .card-text {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.blog-card .btn {
+  border-radius: 9px;
+}
+
+/*  Responsive */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .auth-page {
+    padding: 22px;
+  }
+
+  .auth-container {
+    max-width: 760px;
+    min-height: auto;
+    border-radius: 28px;
+  }
+
+  .auth-image {
+    min-height: 350px;
+  }
+
+  .auth-container > .col-md-6 {
+    padding: 24px !important;
+  }
+
+  .blog-auth-image,
+  .blog-form-preview {
+    min-height: 350px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .auth-page {
+    padding: 16px;
+    align-items: flex-start !important;
+  }
+
+  .auth-container {
+    max-width: 480px;
+    padding: 8px;
+    border-radius: 24px;
+  }
+
+  .auth-image {
+    min-height: 220px;
+    height: 220px;
+    border-radius: 18px !important;
+  }
+
+  .auth-container > .col-md-6 {
+    padding: 20px 14px !important;
+  }
+
+  .auth-container .mb-5 {
+    margin-bottom: 24px !important;
+  }
+
+  .auth-container h2 {
+    font-size: 27px;
+  }
+
+  .auth-input,
+  .auth-button {
+    min-height: 52px;
+  }
+
+  .blog-auth-image,
+  .blog-form-preview {
+    min-height: 220px;
+    height: 220px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 576px) {
+  .blog-card-image {
+    height: 220px;
+  }
+
+  /* Header stacks vertically */
+  .main-header {
+    padding: 16px;
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  .brand-title {
+    font-size: 26px;
+  }
+
+  .header-nav {
+    width: 100%;
+    display: flex;
+  }
+
+  .header-btn {
+    flex: 1;
+    padding: 10px 8px;
+  }
+
+  /* Toolbar stacks vertically */
+  .blog-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .search-wrapper,
+  .sort-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .auth-page {
+    padding: 10px;
+  }
+
+  .auth-image {
+    min-height: 170px;
+    height: 170px;
+  }
+
+  .auth-container > .col-md-6 {
+    padding: 16px 10px !important;
+  }
+}

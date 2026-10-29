@@ -1,0 +1,41 @@
+{
+  "blogs": [
+    {
+      "name": "arth",
+      "image": "https://i.pinimg.com/736x/85/c5/21/85c5213f99439d072facfab91d381324.jpg",
+      "description": "adddcgxcb",
+      "id": "Nlfg-HX2tXo"
+    },
+    {
+      "name": "art1",
+      "image": "https://i.pinimg.com/736x/85/c5/21/85c5213f99439d072facfab91d381324.jpg",
+      "description": "gfdsbgerhj",
+      "id": "c4qoH6Bq17k"
+    },
+    {
+      "name": "2",
+      "image": "https://i.pinimg.com/736x/85/c5/21/85c5213f99439d072facfab91d381324.jpg",
+      "description": "dbvsxvxc",
+      "id": "zF01u2wvgno"
+    },
+    {
+      "name": "dsgfb cx",
+      "image": "https://i.pinimg.com/736x/85/c5/21/85c5213f99439d072facfab91d381324.jpg",
+      "description": "cb dfy\n",
+      "id": "xEwSrTdZtuo"
+    },
+    {
+      "name": "dbfgewq`",
+      "image": "https://i.pinimg.com/736x/85/c5/21/85c5213f99439d072facfab91d381324.jpg",
+      "description": "ijhsdml,",
+      "id": "K0YiXDdyzaw"
+    },
+    {
+      "name": "cggv hgerwgf",
+      "image": "https://i.pinimg.com/736x/85/c5/21/85c5213f99439d072facfab91d381324.jpg",
+      "description": "sdgrtegf",
+      "id": "wLRPDoGfQ4c"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
