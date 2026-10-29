@@ -1,16 +1,33 @@
-# React + Vite
+## 🚀 How to Run
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 1. Clone Repository
+```bash
+git clone https://github.com/ArthKathiriya08/React-Js-Project-4.git
+```
 
-Currently, two official plugins are available:
+### 2. Open Project Folder
+```bash
+cd React-Js-Project-4
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 3. Install Dependencies
+```bash
+npm install
+```
 
-## React Compiler
+### 4. Start JSON Server (Terminal 1)
+```bash
+npx json-server --watch db.json --port 3000
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 5. Start React App (Terminal 2)
+```bash
+npm run dev
+```
 
-## Expanding the ESLint configuration
+### 6. Open in Browser
+```text
+http://localhost:5173
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Note:** Keep both terminals running.
