@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function AddBlog() {
+  // Keep form values in sync with the preview and inputs.
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [description, setDescription] = useState("");
@@ -10,6 +11,7 @@ function AddBlog() {
   const navigate = useNavigate();
 
   function handleSubmit(event) {
+    // Handle submission here instead of reloading the page.
     event.preventDefault();
 
     const newBlog = {
@@ -18,6 +20,7 @@ function AddBlog() {
       description: description,
     };
 
+    // Save the new blog through the API.
     axios
       .post("http://localhost:3000/blogs", newBlog)
       .then(() => {

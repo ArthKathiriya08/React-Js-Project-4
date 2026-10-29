@@ -9,6 +9,7 @@ function Login({ onLogin }) {
   function handleLogin(event) {
     event.preventDefault();
 
+    // Read the account saved during registration.
     const data = localStorage.getItem("user");
 
     if (!data) {

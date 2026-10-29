@@ -50,6 +50,7 @@ function BlogList({ onLogout }) {
     }
   }
 
+  // Filter and sort before showing the current page.
   const filteredBlogs = blogs
     .filter((blog) => blog.name.toLowerCase().includes(search.toLowerCase()))
     .sort((a, b) =>
@@ -144,6 +145,13 @@ function BlogList({ onLogout }) {
                   <p className="card-text text-secondary">{blog.description}</p>
 
                   <div className="d-flex gap-2 mt-auto">
+                    <Link
+                      to={`/blog/${blog.id}`}
+                      className="btn btn-primary flex-fill"
+                    >
+                      Read More
+                    </Link>
+
                     <Link
                       to={`/edit-blog/${blog.id}`}
                       className="btn btn-warning flex-fill"

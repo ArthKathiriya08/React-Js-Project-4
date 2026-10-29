@@ -10,6 +10,7 @@ function EditBlog() {
   const [image, setImage] = useState("");
   const [description, setDescription] = useState("");
 
+  // Fill the form with the selected blog's details.
   useEffect(() => {
     axios
       .get(`http://localhost:3000/blogs/${id}`)
@@ -33,6 +34,7 @@ function EditBlog() {
       description: description,
     };
 
+    // Save the edited blog through the API.
     axios
       .put(`http://localhost:3000/blogs/${id}`, updatedBlog)
       .then(() => {

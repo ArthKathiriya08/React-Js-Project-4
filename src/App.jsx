@@ -6,8 +6,10 @@ import Login from "./components/Login";
 import BlogList from "./components/BlogList";
 import AddBlog from "./components/AddBlog";
 import EditBlog from "./components/EditBlog";
+import BlogDetails from "./components/BlogDetails";
 
 function ProtectedRoute({ isLoggedIn, children }) {
+  // Send guests to sign in before showing protected pages.
   return isLoggedIn ? children : <Navigate to="/login" replace />;
 }
 
@@ -66,6 +68,15 @@ function App() {
         />
 
         <Route path="*" element={<Navigate to="/" replace />} />
+
+        <Route
+          path="/blog/:id"
+          element={
+            <ProtectedRoute isLoggedIn={isLoggedIn}>
+              <BlogDetails />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </div>
   );

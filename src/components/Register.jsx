@@ -18,6 +18,7 @@ function Register() {
       password: password,
     };
 
+    // Save this demo account in the browser.
     localStorage.setItem("user", JSON.stringify(user));
 
     alert("Registration Successful!");
