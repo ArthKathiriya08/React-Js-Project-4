@@ -71,9 +71,9 @@ function BlogList({ onLogout }) {
     <div className="container py-3">
       {/* Header */}
       <header className="main-header d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
-        <Link to="/blogs" className="brand-link text-decoration-none">
-          <h2 className="brand-title mb-0">My Blog</h2>
-        </Link>
+        <h2 className="brand-title mb-0">
+          {JSON.parse(localStorage.getItem("user"))?.name || "My"}'s Blog
+        </h2>
 
         <nav className="header-nav d-flex align-items-center flex-wrap gap-2">
           <Link to="/add-blog" className="header-btn header-add">
