@@ -1,47 +1,4 @@
 {
-  "blogs": [
-    {
-      "id": 1,
-      "name": "Getting Started with React",
-      "image": "https://picsum.photos/seed/react-start/600/400",
-      "description": "A simple guide to building your first React app. Learn components, props and state step by step. Perfect for beginners who want to start strong."
-    },
-    {
-      "id": 2,
-      "name": "Mastering CSS Flexbox",
-      "image": "https://picsum.photos/seed/css-flexbox/600/400",
-      "description": "Flexbox makes layouts easy and predictable. This post covers alignment, spacing and wrapping with practical examples."
-    },
-    {
-      "id": 3,
-      "name": "Why I Love JavaScript",
-      "image": "https://picsum.photos/seed/js-love/600/400",
-      "description": "JavaScript runs everywhere, from browsers to servers. Here are my favorite features that make coding fun. A few tips on writing cleaner code are included too."
-    },
-    {
-      "id": 4,
-      "name": "Building a REST API with Node",
-      "image": "https://picsum.photos/seed/node-api/600/400",
-      "description": "Create a simple REST API using Node.js and Express. We cover routes, JSON responses and basic error handling."
-    },
-    {
-      "id": 5,
-      "name": "Tips for a Clean UI",
-      "image": "https://picsum.photos/seed/clean-ui/600/400",
-      "description": "Good design is about spacing, color and consistency. Small changes can make your interface look professional. These quick tips work for any project."
-    },
-    {
-      "id": 6,
-      "name": "Git Basics for Beginners",
-      "image": "https://picsum.photos/seed/git-basics/600/400",
-      "description": "Learn commits, branches and merges without confusion. Version control saves you from many painful mistakes. Start using Git in your next project."
-    },
-    {
-      "id": 7,
-      "name": "Useful VS Code Shortcuts",
-      "image": "https://picsum.photos/seed/vscode-keys/600/400",
-      "description": "Speed up your coding with a handful of handy shortcuts. Multi-cursor editing and quick file search are my top picks."
-    }
-  ],
-  "$schema": ["./node_modules/json-server/schema.json"]
+  "blogs": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }
