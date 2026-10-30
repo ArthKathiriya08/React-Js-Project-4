@@ -17,7 +17,7 @@ npm install
 
 ### 4. Start JSON Server (Terminal 1)
 ```bash
-npx json-server --watch db.json --port 3000
+npm run server
 ```
 
 ### 5. Start React App (Terminal 2)
