@@ -116,14 +116,6 @@ body {
   box-shadow: 0 5px 20px rgba(45, 50, 80, 0.06);
 }
 
-.brand-link {
-  color: #1670f8;
-}
-
-.brand-link:hover {
-  color: #0757ce;
-}
-
 .brand-title {
   font-size: 30px;
   font-weight: 700;
