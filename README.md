@@ -1,3 +1,7 @@
+Watch the code explanation video:
+
+[Watch the Video](https://drive.google.com/file/d/1Eux5gwCBY-8fa_RrumETZ2yyrruF816b/view?usp=sharing)
+
 ##  How to Run
 
 ### 1. Clone Repository
