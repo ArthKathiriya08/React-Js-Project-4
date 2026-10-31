@@ -67,7 +67,7 @@ function App() {
           }
         />
 
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/blogs" replace />} />
 
         <Route
           path="/blog/:id"
